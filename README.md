@@ -19,7 +19,7 @@
   Once in the correct directory, run "npm start" in your terminal to start the server. Open localhost:3001 in your browser to view the application.
 
   ## Screenshot
-  ![Alt text](https://imgur.com/B3utfVa "screenshot of note-taker app") 
+  ![Alt text](https://i.imgur.com/B3utfVa.png "screenshot of note-taker app") 
 
   ## Contributing Members
   Kristin Foreyt
