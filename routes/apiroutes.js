@@ -16,7 +16,7 @@ router.get('/notes', (req, res) => {
 router.post('/notes', (req, res) => {
     console.log(JSON.stringify(req.body));
     const results = notes;
-    const newNote = { title: req.body.title, text: req.body.text, id: uniqid };
+    const newNote = { title: req.body.title, text: req.body.text, id: uniqid() };
 
     results.push(newNote);
 

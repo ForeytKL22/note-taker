@@ -1,7 +1,7 @@
 # Note Taker Starter Code
 
   ## Description
-    Use this note-taker, hosted on your local server, to write and save notes to help you remember errands to run, items on your to-do list, or just something you may want to remember. Notes are saved to the server and persist upon refresh.
+    Use this note-taker, hosted on your local server, to write and save notes to help you remember errands to run, items on your to-do list, or just something you may want to remember. Once you save a note, refresh the page and the note is saved to the server, and persist upon refresh and stopping/starting of the server.
 
   ## Table of Contents
   * [Installation](#installation)
