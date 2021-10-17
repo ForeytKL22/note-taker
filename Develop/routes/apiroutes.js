@@ -1,8 +1,8 @@
 const fs = require('fs');
 const router = require('express').Router();
 const notes = require('../db/db.json');
-// const store = require('../db/store.js');
 const path = require('path');
+const uniqid = require('uniqid');
 
 
 router.get('/notes', (req, res) => {
@@ -11,13 +11,14 @@ router.get('/notes', (req, res) => {
     console.log(results);
 });
 
+
+
 router.post('/notes', (req, res) => {
     console.log(JSON.stringify(req.body));
     const results = notes;
-    const newNote = { title: req.body.title, text: req.body.text, id: 1 };
+    const newNote = { title: req.body.title, text: req.body.text, id: uniqid };
 
     results.push(newNote);
-    console.log(results);
 
     fs.writeFileSync(
         path.join(__dirname, '../db/db.json'),
